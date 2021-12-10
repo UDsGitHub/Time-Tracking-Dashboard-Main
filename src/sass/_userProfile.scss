@@ -1,0 +1,56 @@
+@import "variables";
+
+* {
+  font-weight: 300;
+}
+
+.user-profile {
+  background-color: $Dark-blue;
+  border-radius: $BorderRadius;
+  overflow: hidden;
+}
+
+.userName {
+  margin-bottom: 2rem;
+}
+
+li {
+  list-style: none;
+  button {
+    font-size: 0.875rem;
+    background-color: transparent;
+    border: 0;
+    color: $Desaturated-blue;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  button:hover {
+    color: white;
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  background-color: $Blue;
+  padding: $ProfilePadding;
+  border-radius: 1rem;
+}
+
+.profile-pic {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.time-frames {
+  background-color: $Dark-blue;
+  padding: $ProfilePadding;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1rem;
+}

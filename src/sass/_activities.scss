@@ -1,0 +1,38 @@
+.activities {
+  display: grid;
+  grid-template-columns: repeat(3, 14rem);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.activity:nth-of-type(1)::before{
+    background: url('../images/icon-work.svg') $Light-orange;
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+.activity:nth-of-type(2)::before{
+    background: url('../images/icon-play.svg') $Soft-blue;
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+.activity:nth-of-type(3)::before{
+    background: url('../images/icon-study.svg') $Light-red;
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+.activity:nth-of-type(4)::before{
+    background: url('../images/icon-exercise.svg') $Lime-green;
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+.activity:nth-of-type(5)::before{
+    background: url('../images/icon-social.svg') $Violet;
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+.activity:nth-of-type(6)::before{
+    background: url('../images/icon-self-care.svg') $Soft-orange;
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+

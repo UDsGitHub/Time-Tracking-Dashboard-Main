@@ -1,0 +1,59 @@
+@import "variables";
+
+.activity {
+  position: relative;
+  margin-top: 2.25rem;
+  padding: 1.5rem;
+  background-color: $Dark-blue;
+  border-radius: $BorderRadius;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.15s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 3.5rem;
+    border-radius: $BorderRadius $BorderRadius 0 0;
+    z-index: -1;
+  }
+}
+
+.activity:hover {
+  background-color: hsl(235, 36%, 40%);
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .title {
+    font-weight: 400;
+  }
+  .dotmenu {
+    cursor: pointer;
+    &:hover {
+      filter: contrast(100%) saturate(0) brightness(200%);
+    }
+  }
+}
+
+.bottom-bar {
+  display: flex;
+  flex-direction: column;
+
+  .current {
+    font-size: 3rem;
+  }
+  .previous {
+    color: $Pale-Blue;
+    font-size: 0.875rem;
+  }
+}
